@@ -1,0 +1,6 @@
+# ninja log v6
+13	238	7561269181261811	build.ninja	7d9f158f4878d638
+100	176	7551405875612441	unidirectional_list_project.exe	a3aee941815b4829
+129	206	7561263694790241	2_lab_C.exe	38692186db95910a
+18	128	7561263693680214	CMakeFiles/2_lab_C.dir/project/9/main.c.obj	882ab23593707937
+9	107	7559669216114567	CMakeFiles/2_lab_C.dir/project/9/s_f_printf.c.obj	4e26af8fb7083e94

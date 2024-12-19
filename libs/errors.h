@@ -1,0 +1,10 @@
+#ifndef LIBS_ERRORS_H
+#define LIBS_ERRORS_H
+
+#define OK 0
+#define MEMORY_ALLOCATION_ERROR 1
+#define UNEXPECTED_NULL_PTR 2
+#define INVALID_PARAMETER 3
+#define INVALID_FLAG 4
+
+#endif //LIBS_ERRORS_H

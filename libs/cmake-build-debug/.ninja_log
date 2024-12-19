@@ -1,0 +1,4 @@
+# ninja log v6
+4	251	7555687645729789	build.ninja	7f0ba80002c662cc
+12	80	7552857026057393	CMakeFiles/libs.dir/src/types.c.obj	4379ab174a7c1401
+81	153	7552857026747548	libs.exe	baba96a6076a2e8b
