@@ -237,11 +237,11 @@ int printf_calling_function(char  **ANSWER_str,char  * restrict _format_, va_lis
                                 }
 
                                 memcpy(temp_ans_str + current_ANSWER_str_index, strstr_ans, strlen(strstr_ans));
-                                free(strstr_ans);
-                                strstr_ans = NULL;
                                 current_ANSWER_str_index += strlen(strstr_ans);
                                 temp_ans_str[current_ANSWER_str_index] = ' ';
                                 current_ANSWER_str_index += 1;
+                                free(strstr_ans);
+                                strstr_ans = NULL;
                             }
                             _format_ += 3;
                             current_format_index += 3;

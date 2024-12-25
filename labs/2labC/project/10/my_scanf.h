@@ -26,8 +26,8 @@ int scan_from_stream(int stream, void **stream_ptr, char dest[BUFSIZ]);
 
 int scanf_calling_function(int stream, void *stream_ptr, char const *_format_, va_list Valist_args);
 
-int over_scanf(char *format, ...);
-int over_fscanf(char *format, ...);
-int over_sscanf(char *format, ...);
+int over_scanf(char const *format, ...);
+int over_fscanf(char const *format, FILE *stream_ptr, ...);
+int over_sscanf(char *format, char *stream_ptr, ...);
 
 #endif //INC_2_LAB_C_MY_SCANF_H

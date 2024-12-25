@@ -49,12 +49,12 @@ cmake_ninja_workdir = C$:/Users/golds/CLionProjects/labs/2labC/project/cmake-bui
 
 build cmake_object_order_depends_target_project: phony || CMakeFiles/project.dir
 
-build CMakeFiles/project.dir/10/my_scanf.c.obj: C_COMPILER__project_unscanned_Debug C$:/Users/golds/CLionProjects/labs/2labC/project/10/my_scanf.c || cmake_object_order_depends_target_project
-  DEP_FILE = CMakeFiles\project.dir\10\my_scanf.c.obj.d
+build CMakeFiles/project.dir/11/tokenize_realization.c.obj: C_COMPILER__project_unscanned_Debug C$:/Users/golds/CLionProjects/labs/2labC/project/11/tokenize_realization.c || cmake_object_order_depends_target_project
+  DEP_FILE = CMakeFiles\project.dir\11\tokenize_realization.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/golds/CLionProjects/labs/2labC/project/.
   OBJECT_DIR = CMakeFiles\project.dir
-  OBJECT_FILE_DIR = CMakeFiles\project.dir\10
+  OBJECT_FILE_DIR = CMakeFiles\project.dir\11
 
 build CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/types.c.obj: C_COMPILER__project_unscanned_Debug C$:/Users/golds/CLionProjects/libs/src/types.c || cmake_object_order_depends_target_project
   DEP_FILE = CMakeFiles\project.dir\C_\Users\golds\CLionProjects\libs\src\types.c.obj.d
@@ -70,12 +70,12 @@ build CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/memory.c.obj:
   OBJECT_DIR = CMakeFiles\project.dir
   OBJECT_FILE_DIR = CMakeFiles\project.dir\C_\Users\golds\CLionProjects\libs\src
 
-build CMakeFiles/project.dir/10/main.c.obj: C_COMPILER__project_unscanned_Debug C$:/Users/golds/CLionProjects/labs/2labC/project/10/main.c || cmake_object_order_depends_target_project
-  DEP_FILE = CMakeFiles\project.dir\10\main.c.obj.d
+build CMakeFiles/project.dir/11/main.c.obj: C_COMPILER__project_unscanned_Debug C$:/Users/golds/CLionProjects/labs/2labC/project/11/main.c || cmake_object_order_depends_target_project
+  DEP_FILE = CMakeFiles\project.dir\11\main.c.obj.d
   FLAGS = -g -std=gnu99 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/golds/CLionProjects/labs/2labC/project/.
   OBJECT_DIR = CMakeFiles\project.dir
-  OBJECT_FILE_DIR = CMakeFiles\project.dir\10
+  OBJECT_FILE_DIR = CMakeFiles\project.dir\11
 
 
 # =============================================================================
@@ -85,7 +85,7 @@ build CMakeFiles/project.dir/10/main.c.obj: C_COMPILER__project_unscanned_Debug 
 #############################################
 # Link the executable project.exe
 
-build project.exe: C_EXECUTABLE_LINKER__project_Debug CMakeFiles/project.dir/10/my_scanf.c.obj CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/types.c.obj CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/memory.c.obj CMakeFiles/project.dir/10/main.c.obj
+build project.exe: C_EXECUTABLE_LINKER__project_Debug CMakeFiles/project.dir/11/tokenize_realization.c.obj CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/types.c.obj CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/memory.c.obj CMakeFiles/project.dir/11/main.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\project.dir

@@ -3,9 +3,11 @@
 6	121	7563096047700920	CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/types.c.obj	2a0b35cb1756b6e3
 4	120	7563147054297192	CMakeFiles/project.dir/9/s_f_printf.c.obj	7b285f0b82c7e750
 9	77	7563148664779985	CMakeFiles/project.dir/9/main.c.obj	7a6cfc754ad6cb21
-77	145	7563148665459984	project.exe	c2ca1de838ade07
-1	252	7563151337368754	build.ninja	10ae00dcaff6cffb
-1	218	7563151337368754	build.ninja	10ae00dcaff6cffb
-24	93	7563151338108732	CMakeFiles/project.dir/10/main.c.obj	3ee05d098a4fa2fb
+132	332	7567555858613157	project.exe	f0a0fb04bf89c5b8
 22	103	7563151338088730	CMakeFiles/project.dir/10/my_scanf.c.obj	1cbfb3cad3db1f26
-103	174	7563151338898756	project.exe	6e82cf08eb9774f1
+22	351	7568138607346316	build.ninja	10ae00dcaff6cffb
+24	93	7563151338108732	CMakeFiles/project.dir/10/main.c.obj	3ee05d098a4fa2fb
+25	131	7567555857543171	CMakeFiles/project.dir/11/main.c.obj	1728c8f0ebcb75ac
+22	132	7567555857513158	CMakeFiles/project.dir/11/tokenize_realization.c.obj	482b6e29cb7d359e
+4	87	7568146312451019	CMakeFiles/project.dir/11/tokenize_realization.c.obj	482b6e29cb7d359e
+87	276	7568146313281001	project.exe	f0a0fb04bf89c5b8

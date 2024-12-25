@@ -1,14 +1,13 @@
-#include <ftsiface.h>
 #include "my_scanf.h"
 
-int scan_from_stream(int stream, void **stream_ptr, char dest[BUFSIZ]) {
+int scan_from_stream(int stream, void **output_stream_ptr, char dest[BUFSIZ]) {
     FILE **file_stream;
     char *str_stream;
     char *p_str_stream;
     char *dest_cpy = dest;
     char c = 65;
 
-    if (stream_ptr == NULL || dest == NULL) {
+    if (output_stream_ptr == NULL || dest == NULL) {
         return UNEXPECTED_NULL_PTR;
     }
 
@@ -26,7 +25,7 @@ int scan_from_stream(int stream, void **stream_ptr, char dest[BUFSIZ]) {
             break;
         }
         case FILE_STREAM: {
-            file_stream = (FILE **)stream_ptr;
+            file_stream = (FILE **)output_stream_ptr;
             c = fgetc(*file_stream);
             while ((c == ' ' || c == '\t' || c == '\n') && c != EOF) {
                 c = fgetc(*file_stream);
@@ -40,7 +39,7 @@ int scan_from_stream(int stream, void **stream_ptr, char dest[BUFSIZ]) {
             break;
         }
         case STR_STREAM: {
-            p_str_stream = *((char **)stream_ptr);
+            p_str_stream = *((char **)output_stream_ptr);
             c = *p_str_stream;
             p_str_stream++;
             while ((c == ' ' || c == '\t' || c == '\n') && c != '\0') {
@@ -53,7 +52,7 @@ int scan_from_stream(int stream, void **stream_ptr, char dest[BUFSIZ]) {
                 p_str_stream++;
             }
             *dest_cpy = 0;
-            *stream_ptr = p_str_stream;
+            *output_stream_ptr = p_str_stream;
             break;
         }
         default:
@@ -114,10 +113,13 @@ int scanf_calling_function(int stream, void *stream_ptr, char const *_format_, v
     {
         return UNEXPECTED_NULL_PTR;
     }
-    
-    int err, current__format__index = 0, i, base;
+
+    int err, current__format__index = 0, i, virtual_size_temp_strstr = 0, capacity = 64, base;
     char dest[BUFSIZ];
     void *var_ptr;
+    char *temp_strstr = NULL, *the_zeckendorf_input_string = NULL;
+    size_t zeckendorf_len = 0;
+    int temp_int = 0, temp_answer = 0;
     
     if (*_format_ == '%')
     {
@@ -292,6 +294,41 @@ int scanf_calling_function(int stream, void *stream_ptr, char const *_format_, v
             case 'Z':
                 if (*(_format_ + 2) == 'r')
                 {
+                    char *sep = " ";
+
+                    char *temp_res_str;
+                    int temp_answr = 0;
+
+                    unsigned int *u_i_var_ptr = va_arg(Valist_args, unsigned int*);
+
+                    *u_i_var_ptr = 0;
+
+                    err = scan_from_stream(stream, stream_ptr, dest);
+                    if (err)
+                    {
+                        return err;
+                    }
+
+                    temp_res_str = strtok(dest, sep);
+                    err = catoi(temp_res_str, 10, &temp_answer);
+                    if (err)
+                    {
+                        return err;
+                    }
+
+                    *u_i_var_ptr += temp_answr;
+
+                    while(temp_res_str)
+                    {
+                        temp_res_str = strtok(NULL, sep);
+                        err = catoi(temp_res_str, 10, &temp_answr);
+                        if (err)
+                        {
+                            return err;
+                        }
+
+                        *u_i_var_ptr += temp_answr;
+                    }
 
                 }
 
@@ -299,6 +336,7 @@ int scanf_calling_function(int stream, void *stream_ptr, char const *_format_, v
                 {
                     return INVALID_FLAG;
                 }
+                break;
 
             case 'C':
                 if (*(_format_ + 2) == 'v')
@@ -362,5 +400,48 @@ int scanf_calling_function(int stream, void *stream_ptr, char const *_format_, v
     
     
     
+    return OK;
+}
+
+int over_scanf(char const *format, ...)
+{
+    int err;
+    va_list valist_args;
+    va_start(valist_args, format);
+    err = scanf_calling_function(STDIN_STREAM, stdin, format, valist_args);
+    if (err)
+    {
+        return err;
+    }
+
+    return OK;
+}
+
+int over_fcanf(char const *format, FILE *stream_ptr, ...)
+{
+
+    int err;
+    va_list valist_args;
+    va_start(valist_args, stream_ptr);
+    err = scanf_calling_function(FILE_STREAM, stream_ptr, format, valist_args);
+    if (err)
+    {
+        return err;
+    }
+
+    return OK;
+}
+
+int over_sscanf(char *format, char *stream_ptr, ...)
+{
+    int err;
+    va_list valist_args;
+    va_start(valist_args, stream_ptr);
+    err = scanf_calling_function(STR_STREAM, stream_ptr, format, valist_args);
+    if (err)
+    {
+        return err;
+    }
+
     return OK;
 }

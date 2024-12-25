@@ -126,12 +126,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "10/my_scanf.c",
+			"path" : "11/tokenize_realization.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
-			"path" : "10/my_scanf.h",
+			"path" : "11/tokenize_realization.h",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -154,7 +154,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "10/main.c",
+			"path" : "11/main.c",
 			"sourceGroupIndex" : 0
 		}
 	],
