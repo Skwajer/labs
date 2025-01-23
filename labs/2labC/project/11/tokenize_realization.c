@@ -2,14 +2,11 @@
 
 int detector(int ch)
 {
-    if (ch == '\n' || ch == '\t')
+    if (ch == '\n' || ch == '\t' || ch == ' ')
     {
         return SEPARATOR;
     }
-    if (ch  == ' ')
-    {
-        return SPACE_SYMBOL;
-    }
+
     return TOKEN_SYMBOL;
 }
 
@@ -30,10 +27,16 @@ int tokenize(
         return 2;
     }
 
+    if (lexems_count == NULL)
+    {
+        return 4;
+    }
+
+
     *lexems_count = 0;
 
     int err, i = 0;
-    size_t capacity = BUFSIZ, token_capacity = BUFSIZ, virtual_size = 0, virtual_token_size = 0;
+    size_t capacity = BUFSIZ, token_capacity = BUFSIZ, virtual_token_size = 0;
     char *current_token = NULL;
 
     *lexems = (char **)malloc(capacity * sizeof(char *));
@@ -42,126 +45,77 @@ int tokenize(
         return 5;
     }
 
-    current_token = **lexems;
-
-    if (detector(initial[i]) == SEPARATOR)
+    if (*initial == 0 && accept_empty_lexems == 0)
     {
-        i++;
+        *lexems_count += 1;
+        return 100;
     }
 
-    else if (detector(initial[i]) == SPACE_SYMBOL && accept_empty_lexems && detector(initial[i + 1]) == SEPARATOR)
+    else if (*initial == 0 && accept_empty_lexems == 1)
     {
-        current_token = (char *)malloc(2 * sizeof(char));
-        if (current_token == NULL)
+        (*lexems)[*lexems_count] = (char*)malloc(1);
+        if ((*lexems)[*lexems_count] == NULL)
         {
             return 5;
         }
-        current_token[0] = ' ';
-        current_token[1] = '\0';
-        virtual_size++;
+        ((*lexems)[*lexems_count])[virtual_token_size] = '\0';
+        *lexems_count += 1;
     }
-
-    else if (detector(initial[i]) == SPACE_SYMBOL && accept_empty_lexems && initial[i + 1] == '\0')
+    if (accept_empty_lexems == 0)
     {
-        current_token = (char *)malloc(2 * sizeof(char));
-        if (current_token == NULL)
+        while (detector(initial[i]) == SEPARATOR)
         {
-            return 5;
-        }
-        current_token[0] = ' ';
-        current_token[1] = '\0';
-        err = my_realloc((void **)*lexems, sizeof(char *));
-        if (err)
-        {
-            return 5;
+            i++;
         }
     }
-
-    else if (detector(initial[i]) == SPACE_SYMBOL && !accept_empty_lexems)
-    {
-        i++;
-    }
-
-
-    while (initial[i])
-    {
-        if (!accept_empty_lexems)
+        while (initial[i])
         {
-            if ((detector(initial[i]) == SEPARATOR || detector(initial[i]) == SPACE_SYMBOL) &&
-                (detector(initial[i]) == SEPARATOR || detector(initial[i]) == SPACE_SYMBOL))
-            {
-                i++;
-            }
 
-            else if (detector(initial[i]) == TOKEN_SYMBOL && detector(initial[i - 1]) == TOKEN_SYMBOL)
+            if (detector(initial[i]) == SEPARATOR && virtual_token_size == 0 && accept_empty_lexems == 1) //обработка пустой лексемы 0_0
             {
-                current_token[virtual_token_size++] = initial[i++];
-            }
-
-            else if (detector(initial[i]) == TOKEN_SYMBOL &&
-                    (detector(initial[i]) == SEPARATOR || detector(initial[i]) == SPACE_SYMBOL))
-            {
-                current_token = (*lexems)[virtual_size];
-                virtual_size++;
-                current_token = (char *)malloc(token_capacity * sizeof(char));
-                if (current_token == NULL)
+                (*lexems)[*lexems_count] = (char*)malloc(1);
+                if ((*lexems)[*lexems_count] == NULL)
                 {
-                    free(*lexems);
                     return 5;
                 }
-                current_token[virtual_token_size++] = initial[i++];
+                ((*lexems)[*lexems_count])[virtual_token_size] = '\0';
+                *lexems_count += 1;
             }
 
-            else if ((detector(initial[i]) == SEPARATOR || detector(initial[i]) == SPACE_SYMBOL) &&
-                    detector(initial[i - 1]) == TOKEN_SYMBOL)
+            else if (detector(initial[i]) == SEPARATOR && virtual_token_size == 0 && accept_empty_lexems == 0)
             {
-                current_token[virtual_token_size] = '\0';
+                i++;
+            }
+
+            else if (detector(initial[i]) == SEPARATOR && virtual_token_size != 0)
+            {
+                ((*lexems)[*lexems_count])[virtual_token_size] = '\0';
                 virtual_token_size = 0;
-                (*lexems_count)++;
-                virtual_size++;
-                i++;
+                *lexems_count += 1;
             }
 
-        }
-
-        else
-        {
-            if (detector(initial[i]) == SEPARATOR &&
-                detector(initial[i]) == SEPARATOR)
+            else if(detector(initial[i]) == TOKEN_SYMBOL && virtual_token_size == 0)
             {
-                i++;
-            }
-
-            else if ((detector(initial[i]) == TOKEN_SYMBOL || detector(initial[i]) == SPACE_SYMBOL) &&
-                    (detector(initial[i]) == TOKEN_SYMBOL || detector(initial[i]) == SPACE_SYMBOL))
-            {
-                current_token[virtual_token_size++] = initial[i++];
-            }
-
-            else if ((detector(initial[i]) == TOKEN_SYMBOL || detector(initial[i]) == SPACE_SYMBOL) &&
-                     detector(initial[i]) == SEPARATOR)
-            {
-                current_token = (*lexems)[virtual_size];
-                virtual_size++;
-                current_token = (char *)malloc(token_capacity * sizeof(char));
-                if (current_token == NULL)
+                (*lexems)[*lexems_count] = (char *)malloc(token_capacity * sizeof(char));
+                if ((*lexems)[*lexems_count] == NULL)
                 {
-                    free(*lexems);
                     return 5;
                 }
-                current_token[virtual_token_size++] = initial[i++];
+                ((*lexems)[*lexems_count])[virtual_token_size++] = initial[i];
             }
 
-            else if (detector(initial[i]) == SEPARATOR &&
-                    (detector(initial[i]) == TOKEN_SYMBOL || detector(initial[i]) == SPACE_SYMBOL))
+            else if (detector(initial[i]) == TOKEN_SYMBOL && virtual_token_size != 0)
             {
-                current_token[virtual_token_size] = '\0';
-                virtual_token_size = 0;
-                (*lexems_count)++;
-                virtual_size++;
-                i++;
+                ((*lexems)[*lexems_count])[virtual_token_size++] = initial[i];
             }
+            i++;
         }
-    }
+
+        if (virtual_token_size != 0)
+        {
+            ((*lexems)[*lexems_count])[virtual_token_size] = '\0';
+            *lexems_count += 1;
+        }
+
     return OK;
 }

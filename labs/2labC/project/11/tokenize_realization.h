@@ -11,7 +11,6 @@
 #include <ctype.h>
 
 #define SEPARATOR 0
-#define SPACE_SYMBOL 1
 #define TOKEN_SYMBOL 10
 
 int tokenize(
