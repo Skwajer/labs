@@ -6,7 +6,7 @@
 
 int cutoa(unsigned int num, int base, char **ans)
 {
-    int len, digit, i;
+    int len, digit;
     if (base < 2 || base > 36)
         return INVALID_PARAMETER;
 

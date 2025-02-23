@@ -3,8 +3,8 @@
 6	121	7563096047700920	CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/types.c.obj	2a0b35cb1756b6e3
 4	120	7563147054297192	CMakeFiles/project.dir/9/s_f_printf.c.obj	7b285f0b82c7e750
 9	77	7563148664779985	CMakeFiles/project.dir/9/main.c.obj	7a6cfc754ad6cb21
-82	154	7588982701716233	project.exe	f233c00ea0496dc2
-1	260	7593184663959205	build.ninja	10ae00dcaff6cffb
+81	154	7593184994906274	project.exe	e1df95710f31fbfd
+38	464	7595041924373791	build.ninja	10ae00dcaff6cffb
 22	103	7563151338088730	CMakeFiles/project.dir/10/my_scanf.c.obj	1cbfb3cad3db1f26
 24	93	7563151338108732	CMakeFiles/project.dir/10/main.c.obj	3ee05d098a4fa2fb
 19	95	7569559337548016	CMakeFiles/project.dir/11/main.c.obj	1728c8f0ebcb75ac
@@ -15,8 +15,4 @@
 20	93	7587489598205261	CMakeFiles/project.dir/13/sums_decompositon.c.obj	46659c1ec8c796ea
 20	89	7588982454824081	CMakeFiles/project.dir/14/longest_sawtooth_subsequence.c.obj	a6a371e97982f26
 19	82	7588982701096230	CMakeFiles/project.dir/14/main.c.obj	2acdc725039b726a
-38	464	7593184663959205	build.ninja	10ae00dcaff6cffb
-23	175	7593184664979183	CMakeFiles/project.dir/3/main.c.obj	733dc3c19a6af095
-176	384	7593184666504479	project.exe	e1df95710f31fbfd
 18	81	7593184994266302	CMakeFiles/project.dir/3/main.c.obj	733dc3c19a6af095
-81	154	7593184994906274	project.exe	e1df95710f31fbfd
