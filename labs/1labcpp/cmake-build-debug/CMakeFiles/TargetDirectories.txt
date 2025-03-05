@@ -1,0 +1,5 @@
+C:/Users/golds/CLionProjects/labs/1labcpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/golds/CLionProjects/labs/1labcpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/golds/CLionProjects/labs/1labcpp/cmake-build-debug/4/CMakeFiles/task4_class_definition.h.dir
+C:/Users/golds/CLionProjects/labs/1labcpp/cmake-build-debug/4/CMakeFiles/edit_cache.dir
+C:/Users/golds/CLionProjects/labs/1labcpp/cmake-build-debug/4/CMakeFiles/rebuild_cache.dir

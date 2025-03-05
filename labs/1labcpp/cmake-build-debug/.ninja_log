@@ -1,0 +1,15 @@
+# ninja log v6
+7	436	7625443396028825	3/CMakeFiles/task3_class_definition.h.dir/main.cpp.obj	cfde460d14815ce4
+438	515	7625443400334617	3/task3_class_definition.h.exe	cb45ba4b3a7e7434
+8	338	7625445510879931	2/CMakeFiles/1labcpp.dir/main.cpp.obj	8b09664fd042dfe1
+2	235	7628211452573053	build.ninja	3776a6160bd70a7
+4	438	7625443395988825	3/CMakeFiles/task3_class_definition.h.dir/task3_class_realization.cpp.obj	49c495e24e1f3f39
+3	363	7625443721309685	1/CMakeFiles/1labcpp.dir/1v2.cpp.obj	7b26675c1285f069
+364	435	7625443724919504	1/1labcpp.exe	e3cae897d44dc636
+68	593	7628208532093488	2/CMakeFiles/1labcpp.dir/task2_class_realization.cpp.obj	c89f0794cb33e741
+594	837	7628208537343633	2/1labcpp.exe	7c723765de30509f
+13	402	7628212396447756	4/CMakeFiles/task4_class_definition.h.dir/main.cpp.obj	b464094b01ad5a1b
+10	409	7628212396407739	4/CMakeFiles/task4_class_definition.h.dir/task4_class_realization.cpp.obj	532dd661ead14dc2
+409	501	7628212400407564	4/task4_class_definition.h.exe	4ae387707fa034c9
+6	346	7628212685718634	4/CMakeFiles/task4_class_definition.h.dir/main.cpp.obj	b464094b01ad5a1b
+346	427	7628212689119089	4/task4_class_definition.h.exe	4ae387707fa034c9

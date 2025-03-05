@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <fstream>
-
+/*
 enum encoder_mode
 {
     encrypt_it,
@@ -11,8 +11,8 @@ enum encoder_mode
 class encoder
 {
 private:
-    unsigned char *key;
     size_t key_size;
+    unsigned char key[key_size];
 
 public:
     encoder(unsigned char const *k, size_t k_len);
@@ -23,30 +23,15 @@ public:
 
 encoder ::encoder(const unsigned char *k, size_t k_len)
 {
+    key = k;
     key_size = k_len;
-    key = new unsigned char[key_size];
-    if (key == nullptr)
-    {
-        throw std::bad_alloc();
-    }
-    memcpy(key, k, key_size);
-}
-
-encoder ::~encoder()
-{
-    delete[] key;
-    key = nullptr;
 }
 
 void encoder ::mutator(unsigned char const *new_k, size_t new_key_size)
 {
     delete[] key;
     key_size = new_key_size;
-    key = new unsigned char [key_size];
-    if (key == nullptr)
-    {
-        throw std::bad_alloc();
-    }
+    key = new unsigned char[key_size];
     memcpy(key, new_k, key_size);
 }
 
@@ -97,25 +82,26 @@ void swap(unsigned char &a, unsigned char &b)
     a = b;
     b = temp;
 }
-
+*/
 int main()
 {
     char const *data_file = "C:/Users/golds/ClionProjects/labs/1labcpp/1/data_file_for1.txt";
     char const *encrypted_file = "C:/Users/golds/ClionProjects/labs/1labcpp/1/resfile_for_1.bin";
     unsigned char key[] = {0x01, 0x02, 0x03, 0x04, 0x05};
     size_t key_size = sizeof(key);
-    try
-    {
-        encoder enc(key, key_size);
-        enc.encode(data_file, encrypted_file, decrypt_it);
-        return 0;
-    }
-    catch (std::bad_alloc &e)
-    {
-        std::cout << "Memory allocation failed: " << std::endl;
-    }
-    catch (std::runtime_error &e)
-    {
-        std::cout << e.what() << std::endl;
-    }
+   // try
+    //{
+   //     encoder enc(key, key_size);
+   //     enc.encode(data_file, encrypted_file, decrypt_it);
+    //
+    //}
+    //catch (std::bad_alloc &e)
+   // {
+   //     std::cout << "Memory allocation failed: " << std::endl;
+   // }
+    //catch (std::runtime_error &e)
+   // {
+   //     std::cout << e.what() << std::endl;
+    //}//
+    return 0;
 }
