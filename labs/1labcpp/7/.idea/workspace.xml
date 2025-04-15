@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="90d7f783-e1b9-4d07-9d7e-e745d9f0bb1b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/cache-v2-6c867f55c274d8ba2bfc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-362a83af2935eb8eb941.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-19009add3bca5915b6a7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/index-2025-01-25T10-29-52-0556.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/target-project-Debug-5af80324b202c5e80645.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-f5f84cc1522ab10ce7ad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/3.28.1/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/3.28.1/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/10/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/10/my_scanf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/11/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/11/tokenize_realization.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/12/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/12/substr_realization.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/13/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/13/sums_decompositon.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/14/longest_sawtooth_subsequence.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/14/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/3/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/9/main.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/9/s_f_printf.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/memory.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/project.dir/C_/Users/golds/CLionProjects/libs/src/types.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2labC/project/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2vja5QIjFGN3kXmUtMbZDCF5Xif" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C/C++ File.binomial_heap_realization.cpp.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/golds/CLionProjects/labs/labs/1labcpp/7",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="binomial_heap_realization.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="7" TARGET_NAME="binomial_heap_realization.cpp" CONFIG_NAME="binomial_heap_realization.cpp">
+      <option name="sourceFile" value="binomial_heap_realization.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="C/C++ File.binomial_heap_realization.cpp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90d7f783-e1b9-4d07-9d7e-e745d9f0bb1b" name="Changes" comment="" />
+      <created>1744660752471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744660752471</updated>
+      <workItem from="1744660753528" duration="4698000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/binomial_heap_realization.cpp</url>
+          <line>194</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/binomial_heap_realization.cpp</url>
+          <line>97</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
